@@ -51,6 +51,8 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "enzyme": "^2.8.2",
+    "jsdom": "^11.0.0",
     "nodemon": "^1.11.0",
     "sqlite3": "^3.1.8",
     "supertest": "^2.0.1",
@@ -58,8 +60,10 @@
   },
   "ava": {
     "require": [
-      "dotenv/config"
-    ]
+      "dotenv/config",
+      "babel-register"
+    ],
+    "babel": "inherit"
   },
   "babel": {
     "presets": [
