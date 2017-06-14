@@ -51,4 +51,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
+export const PureLoginForm = LoginForm
 export default connect(null, mapDispatchToProps)(LoginForm)
