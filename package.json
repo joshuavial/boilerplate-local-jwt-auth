@@ -57,9 +57,7 @@
     "webpack-livereload-plugin": "^0.11.0"
   },
   "ava": {
-    "require": [
-      "dotenv/config"
-    ]
+    "require": [ ]
   },
   "babel": {
     "presets": [
