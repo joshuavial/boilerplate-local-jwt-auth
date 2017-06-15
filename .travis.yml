@@ -7,3 +7,6 @@ install:
   - sudo apt-get install -qq g++-4.8
   - export CXX="g++-4.8"
   - npm install
+test:
+  - npm run lint
+  - npm run test

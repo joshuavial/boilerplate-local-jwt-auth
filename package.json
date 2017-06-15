@@ -9,7 +9,8 @@
     "postinstall": "knex migrate:latest && webpack",
     "start": "node server",
     "test": "nyc ava -v",
-    "test:watch": "ava --watch"
+    "test:watch": "ava --watch",
+    "lint": "eslint server client test"
   },
   "author": "EDA",
   "license": "ISC",
@@ -51,6 +52,10 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^2.3.1",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
     "sqlite3": "^3.1.8",
